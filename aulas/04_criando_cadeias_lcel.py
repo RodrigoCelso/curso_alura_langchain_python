@@ -1,8 +1,10 @@
-from langchain.schema import StrOutputParser
 from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+
 from dotenv import load_dotenv
 import os 
+
 
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
